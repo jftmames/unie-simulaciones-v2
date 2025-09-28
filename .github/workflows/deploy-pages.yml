@@ -24,7 +24,7 @@ jobs:
           node-version: 20
           cache: 'npm'
       - run: npm ci
-      - run: npm run build
+      - run: npm run build     # genera ./dist con base '/unie-simulaciones-v2/'
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
@@ -38,4 +38,3 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-
