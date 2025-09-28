@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # ❌ sin 'cache: npm' porque no tenemos package-lock.json
 
       - name: Install deps
         run: npm install --no-fund --no-audit
