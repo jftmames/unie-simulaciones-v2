@@ -1,5 +1,3 @@
-// Controles UI básicos reutilizables
-
 export function slider(
   label: string,
   min: number,
@@ -9,7 +7,6 @@ export function slider(
   onChange: (v: number) => void
 ): HTMLElement {
   const wrap = document.createElement('div');
-  wrap.className = 'control';
   const id = 's' + Math.random().toString(36).slice(2);
   wrap.innerHTML = `
     <label for="${id}">${label}: <span id="${id}-val">${value}</span></label><br>
@@ -31,3 +28,4 @@ export function button(label: string, onClick: () => void): HTMLElement {
   b.onclick = onClick;
   return b;
 }
+
