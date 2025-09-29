@@ -1,3 +1,4 @@
+import './style.css';
 import { penduloView } from './simulations/fisica/pendulo/view';
 import { integralView } from './simulations/matematicas/integral/view';
 import { logicaView } from './simulations/informatica/logica/view';
